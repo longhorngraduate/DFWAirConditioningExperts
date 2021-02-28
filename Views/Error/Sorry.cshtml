@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+
+    <div class="contact-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-4 contact-left">
+                    <h2>Error</h2>
+                    <br />
+
+                    <div class="form-horizontal">
+                        @*<h4>An error occurred while processing your request.</h4>
+                            <hr />*@
+
+                        <div class="container">
+                            @{
+                                if (String.IsNullOrEmpty(ViewBag.errorMessage))
+                                {
+                                    <span class="text-danger">An error occurred while processing your request.  We have been notified of this error and will get back to you as soon as we can.</span>
+                                }
+                                else
+                                {
+                                    <span class="text-danger">@ViewBag.errorMessage</span>
+                                }
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

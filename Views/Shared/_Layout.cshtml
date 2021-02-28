@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187156918-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-187156918-1');
+    </script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    @*<script async src="https://www.googletagmanager.com/gtag/js?id=G-KV0KQKXCB7"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-KV0KQKXCB7');
+        </script>*@
+
+    <meta charset="utf-8">
+    @if (ViewBag.Title == "AC Repair - Get 24 hour AC Repair and Installation | DFW AC Experts")
+    {
+        <meta name="keywords" content="ac repair,air conditioning installers,air conditioning repair service,24 hour ac repair,ac repair services,ac unit repair,central air repair,home ac repair,home ac repair near me,home air conditioner repair" />
+        <meta name="description" content="Get affordable and reliable AC repairs by professional and honest technicians in Dallas/Fort Worth. 24 hour AC repair available. Free Quotes! Low Prices!">
+        <!-- 1. Free Quotes! Get cheap and reliable AC repairs from professional and honest technicians. We will also teach you step-by-step how to maintain your HVAC system.
+            2. Some of the lowest quotes around.
+            -->
+    }
+    else if (ViewBag.Title == "Aire Acondicionado Reparacion e Instalacion: 24 horas al dia y barato")
+    {
+        <meta name="keywords" content="aire acondicionado reparacion,reparacion de aire acondicionado de casa,reparacion de aire acondicionado para casa,reparacion de aire acondicionado central,reparacion de aire acondicionado cerca de mi,aire acondicionado repair,reparacion de ac,reparación de aires acondicionado,reparar aire acondicionado de casa,aire acondicionado instalacion" />
+        <meta name="description" content="Cotizaciónes Gratis! Aire acondicionado reparacion e instalacion baratos en la area de Dallas/Fort Worth con tecnicos profesionales y honestos. 24 horas al dia.">
+    }
+    else if (ViewBag.Title == "Error")
+    {
+        <meta name="description" content="Error - Sorry, please go back to the previous page. Error - Perdon, por favor regrese a la pagina anterior.">
+    }
+    else
+    {
+        <meta name="description" content="Miscellaneous">
+    }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>@ViewBag.Title</title>
+
+    @Styles.Render("~/Content/allcss")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
+    @*<div class="container body-content">*@
+    @RenderBody()
+
+    @*Scripts.Render("~/bundles/jquery")*@
+    @*Scripts.Render("~/bundles/jqueryval")*@
+    @Scripts.Render("~/bundles/alljs")
+    @*Scripts.Render("~/bundles/alljs")*@
+    @RenderSection("scripts", required: false)
+
+
+    <!-- Carousel -->
+    <!--<script src="~/Scripts/owlCarousel.js"></script>
+
+
+    <script src="~/Scripts/jquery-1.11.0.min.js"></script>-->
+    @*<script>window.jQuery || document.write('<script src="~/Scripts/jquery-1.11.0.min.js"><\/script>')</script>*@
+    <!--<script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/plugins.js"></script>
+    <script src="~/Scripts/main.js"></script>
+    <script src="~/Scripts/second.js"></script>
+
+    <script src="~/Scripts/jqBootstrapValidation.js"></script>
+    <script src="~/Scripts/jquery.lazy-master/jquery.lazy.min.js"></script>-->
+    @*<script type="text/javascript">
+            jQuery(function ($) {
+                $('body').bind('touchstart', function () { });
+            });
+        </script>*@
+
+    @*<script>$.fn.cycle.defaults.autoSelector = '.slideshow';</script>*@
+
+
+    <!-- Start of HubSpot Embed Code -->
+    @*<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9077045.js"></script>*@
+    <!-- End of HubSpot Embed Code -->
+
+    <script src="//code.tidio.co/8z8hunr9yqyrf74swjeihqgbbs5gtatb.js" async></script>
+</body>
+</html>
