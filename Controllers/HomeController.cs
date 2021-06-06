@@ -78,7 +78,7 @@ namespace DFWAirConditioningExperts.Controllers
         public ActionResult Send(string name, string preferredmethod, string phone, string email, string message)
         {
             MailMessage mailMessage = new MailMessage();
-            mailMessage.From = new MailAddress("Support@DFWAirConditioningExperts.com");
+            mailMessage.From = new MailAddress("yourEmail@yourDomain.com");
             SetRecipients(mailMessage);//.To
             mailMessage.IsBodyHtml = true;
             mailMessage.Subject = "DFW Air Conditioning Experts - CONTACT US";
@@ -107,7 +107,7 @@ namespace DFWAirConditioningExperts.Controllers
         public ActionResult GetPromoCode(string name, string preferredmethod, string phone, string email, string message)
         {
             MailMessage mailMessage = new MailMessage();
-            mailMessage.From = new MailAddress("Support@DFWAirConditioningExperts.com");
+            mailMessage.From = new MailAddress("yourEmail@yourDomain.com");
             SetRecipients(mailMessage);//.To
             mailMessage.IsBodyHtml = true;
             mailMessage.Subject = "DFW Air Conditioning Experts - PROMO CODE";
